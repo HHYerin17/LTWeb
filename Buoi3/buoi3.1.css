@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.HIT13 {
+    width: 100vw;
+    height: 100vh;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slogan {
+    width: 750px;
+    height: 250px;
+    display: flex;
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+    background-color: orange;
+}
+.size {
+    width: 150px;
+    height: 250px;
+}
+
+.h {
+    display: flex;
+    align-items: center;
+}
+
+.i {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.t{
+    display: flex;
+}
+
+.bon {
+    display: flex; 
+}
+
+.bon-left {
+    display: flex;
+    flex-direction: column;
+}
+.bon-mid {
+    display: flex;
+    align-items: center;
+}
+
+    

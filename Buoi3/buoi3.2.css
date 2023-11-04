@@ -1,0 +1,22 @@
+body{
+    background-color: hsl(185, 100%, 58%);
+}
+.main{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+.box1{
+    height: 40px;
+    width: 40px;
+    background-color: #000000;
+    display: flex;
+}
+.box2{
+    height: 40px;
+    width: 40px;
+    background-color: #ffffff;
+    display: flex;
+}
