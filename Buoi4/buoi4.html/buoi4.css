@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.square {
+    height: 200px;
+    width: 200px;
+    background-color:lightcoral;
+    position: relative;
+    top: 200px;
+    left: 300px;
+}
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    z-index: 0;
+}
