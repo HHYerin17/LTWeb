@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.search {
+    background-color: white;
+    width: 100%;
+    height: 150px;
+    border-color: black;
+    border: 1px;
+}
+.header {
+}
+.box {
+    background-color: red;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+a {
+    width: 5px;
+    height: 5px;
+}
+div {
+    color: white;
+}
+.right {
+    display: flex;
+    justify-content: space-between;
+}
+.timkiem {
+    border-radius: 5px;
+    background-color: khaki;
+    width: 500px;
+    height: 40px;
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+img {
+    width: 400px;
+    height: 200px;
+}
