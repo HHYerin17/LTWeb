@@ -1,0 +1,467 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+   
+}
+
+li{
+    list-style: none;
+}
+
+
+html,body{
+    line-height: 1.5;
+    font-size: 15px;
+}
+
+.clear{
+    clear: both;
+}
+
+.row{
+    margin: 0 -8px;
+}
+
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col{
+    float: left;
+    padding: 0 8px;
+
+}
+
+.col-third{
+    width: calc(100%/3);
+}
+
+.col-half{
+    width: 50%;   
+}
+
+.col-full{
+    width: 100%;
+}
+
+.mb-8{
+    margin-bottom: 8px;
+}
+
+
+#header{
+    position: fixed;
+    top: 0;
+    background-color: #000;
+    height: 46px;
+    width: 100%;
+    z-index: 1;
+}
+
+.nav{
+    display: inline-block;
+    
+}
+
+.nav li{
+    display: inline-block;
+    position: relative;
+}
+
+.nav li:hover .subnav{
+    display: block ;
+}
+
+.nav li:hover a{
+    background-color: #ccc;
+    color: #000;
+}
+.nav li a{
+    color: #fff;
+    line-height: 46px;
+    padding: 0 24px;
+    text-decoration: none;
+    text-transform: uppercase ;
+    display: block;
+}
+
+.nav .subnav{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    min-width: 160px;
+    color: #000;
+    box-shadow: 3px 5px 10px 3px rgba(0,0,0,0.4);
+    
+}
+
+.nav .subnav li{
+    display: block;
+    padding: 8px 16px
+}
+
+.nav .subnav li:hover{
+    background-color: #ccc;
+}
+
+.search-btn {
+    display: inline-block;
+    color: #fff;
+    line-height: 46px;
+    padding: 0 24px;
+    
+}
+.search-btn:hover{
+    background-color: #f44336;
+}
+.menu-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    color: #fff;
+    line-height: 46px;
+    padding: 0 24px;
+}
+.menu-btn:hover{
+    background-color: #ccc;
+}
+
+/* slider */
+#slider{
+    position: relative;
+    background: url(./chicago.jpg
+    ) no-repeat top center;
+    background-size: cover;
+    padding-top: 50%;
+    margin-top: 46px;
+    
+}
+
+#slider .slider-content{
+    position: absolute;
+    color: #fff;
+    bottom: 47px;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slider-content .slider-heading{
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.slider-content .slider-description{
+    margin-top: 15px;
+    font-weight: bolder;
+}
+
+#band .band-about{
+    text-align: justify;
+    margin-bottom: 15px;
+} 
+
+.member-list{
+    padding: 32px 0;
+}
+
+.member-item{
+   text-align: center;
+   margin-bottom: 8px;
+}
+
+.member-name{
+    margin: 15px 0;
+    
+}
+
+.member-img{
+    width: 60%;
+    border-radius: 4px;
+}
+
+#tour{
+   background-color: #000;
+}
+
+#tour .content-section{
+    color: #fff;
+}
+
+.sold-tickets ul{
+    background-color: #fff;
+}
+
+.sold-tickets li{
+    color: #000;
+    border-bottom:1px solid #ddd;
+    padding: 7px 16px;
+}
+
+.sold-tickets span{
+    background-color: #f44336;
+    color: #fff;
+    margin-left: 16px;
+    padding: 2.5px 8px;
+}
+
+.sold-tickets .number-tickets{
+    border-radius: 50%;
+    color: #fff;
+    background-color: #000;
+    float: right;
+    margin-right: 16px;
+}
+
+.places-list{
+    padding: 32px 0;
+}
+.place-img:hover{
+    opacity: 0.6;
+}
+
+.place-img{
+    width: 100%;
+    
+}
+
+.place-content{
+    background-color: #fff;
+    color: #000;
+    margin-top: -8px;
+    padding: 0 16px;
+}
+.place-name{
+    margin: 15px 0;
+    display: inline-block;
+}
+
+.place-date{
+    opacity: 0.6;
+    margin-bottom: 15px;
+}
+.place-description{
+    margin-bottom: 15px;
+}
+.buy-ticket-btn{
+    border: none;
+    padding: 8px 16px;
+    color: #fff;
+    background-color: #000;
+    margin-bottom: 16px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+.buy-ticket-btn:hover{
+    color: #000;
+    background-color: #ccc;
+}
+
+.contact-content{
+    padding: 32px 0;
+}
+.contact-info{
+    font-size: 18px;
+}
+
+.contact-icon{
+    width: 30px;
+    display: inline-block;
+    
+}
+
+
+.contact-form .form-input{
+        width: 100%;
+        padding: 10.5px 8px;
+        border:1px solid #ccc;
+
+}
+
+.row2{
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.contact-form .btn-send{
+    border: none;
+    background-color: #000;
+    color: #fff;
+    padding: 12px 17.5px;
+    margin: 16px 0;
+    float: right;   
+}
+.contact-form .btn-send:hover{
+    background-color: #ccc;
+    color: #000;
+}
+
+.content-section {
+    padding: 64px 16px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content-section .content-heading{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 10px;
+    letter-spacing: 4px;
+}
+
+.content-section .content-subheading{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+#map img{
+    object-fit: cover;
+    width: 100%;
+}
+
+#footer{
+    padding: 64px 16px;
+    text-align: center;
+}
+
+#footer .social-list i{
+    font-size: 25px;
+    padding: 4px 8px;
+    opacity: 0.7;
+}
+
+#footer .social-list i:hover{
+    opacity: 0.4;
+}
+
+#footer .copyright{
+    margin: 15px 0;
+    color: #000;
+    opacity: 0.8;
+    font-size: 18px;
+}
+
+#footer .copyright a{
+    opacity: 0.8;
+    color: #000;
+    font-size: 18px;
+    padding: 14px 7px;
+}
+
+.open{
+    display: flex !important;
+}
+.modal{
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.4);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-container{
+    position: relative;
+    width: 800px;
+    min-height: 300px;
+    background-color: #fff;
+    opacity: 1;
+    max-width: calc(100% - 64px);
+    animation: srolldown ease 0.5s;
+   
+}
+
+.modal-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 24px;
+    padding: 8px 16px;
+    color: #fff;
+}
+
+.modal-header{
+    background-color: #009688;
+    padding: 42px 16px;
+    color: #fff;
+    font-size: 30px;
+    letter-spacing: 4px;
+    text-align: center;
+}
+.modal-header i{
+    margin-right: 16px;
+}
+
+.modal-body{
+    padding: 16px;
+}
+
+.modal-label{
+    margin-bottom: 12px;
+    display: block;
+}
+
+.modal-input {
+    margin-bottom: 24px;
+}
+
+.modal-input label i{
+    width: 20px;
+}
+.modal-input input{
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+.modal-btn{
+    color: #fff;
+    background-color: #009688;
+    border: none;
+    width: 100%;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 20px 12px;
+}
+
+.modal-btn:hover{
+    opacity: 0.8;
+}
+
+.modal-footer{
+    padding: 16px;
+    text-align: right;
+}
+
+.modal-help a{
+    color: #009688;
+    
+}
+
+@keyframes srolldown{
+    from{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
